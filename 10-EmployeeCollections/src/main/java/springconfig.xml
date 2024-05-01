@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="emp" class="com.collections4._EmployeeCollections.EmployeeDetails"> 
+			<property name="empNames">
+			   <list>
+				   <value>Mani</value>
+				   <value>Nandhu</value>
+				   <value>Pavan</value>
+			   </list>
+		   </property>
+		   <property name="empNums">
+			   <set>
+				   <value>1</value>
+				   <value>2</value>
+				   <value>3</value>
+				   <value>4</value>
+			   </set>
+		   </property>
+		   <property name="empDeptNames">
+			   <map>
+				    <entry key="police" value="constable"/>
+				    <entry key="doctor" value="RMP"/>
+				    <entry key="Teacher" value="Maths"/>
+			   </map>
+		   </property>
+		   <property name="empSalary">
+			    <props>
+					<prop key="Salary" >10000,20000
+						</prop>
+				</props>
+		   </property>
+	</bean>
+	 
+</beans>
